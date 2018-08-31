@@ -8,7 +8,17 @@
     <script src="jquery.js"></script>
     <script>
     $(function(){
-
+        $.ajax({
+            url: 'texto.txt',
+            success:function(response){
+                console.log(response);
+                alert('Encontrou!');
+                $('h1').after(response);
+            },
+            error:function(){
+                alert('Ocorreu um erro');
+            }
+        });
     })
     </script>
 </head>

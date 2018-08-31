@@ -1,0 +1,1 @@
+Texto vindo utilizando a função $.ajax()
